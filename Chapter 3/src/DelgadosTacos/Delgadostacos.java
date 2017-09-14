@@ -10,23 +10,58 @@ public class Delgadostacos {
 		
 		
 		
-		double taco = 1.99, riceAndBeans = 2.50, TacoSalad = 5.99, Horchata = 1.99, burritos = 5.99, MexicanPop = 1.99, chipsAndSalsa = 2.00;
-		double tamales = 1.50, enchiladas = 1.00, fajita = 4.99;
+		double taco , riceAndBeans , TacoSalad , Horchata  , burritos , MexicanPop , chipsAndSalsa ;
+		double tamales , enchiladas, fajita;
 		double tacoOrdered, riceAndBeansOrdered, TacoSaladOrdered, HorchataOrdered, burritosOrdered, MexicanPopOrdered, chipsAndSalsaOrdered,tamalesOrdered, enchiladasOrdered, fajitasOrdered;
-		double tacoPrice, riceAndBeansPrice, TacoSaladPrice, HorchataPrice, burritosPrice, MexicanPopPrice, chipsAndSalsaPrice, tamalesPrice, enchaladasPrice, fajitasPrice;
+		double tacoPrice= 1.99, riceAndBeansPrice= 2.50, TacoSaladPrice= 5.99, HorchataPrice = 1.99, burritosPrice= 5.99, MexicanPopPrice= 1.99, chipsAndSalsaPrice= 2.00, tamalesPrice= 1.50, enchiladasPrice = 1.00, fajitasPrice = 4.99, total;
 		
 		
 		System.out.println("How many tacos would you like? >>");
 		tacoOrdered = input.nextDouble();
-		tacoPrice = tacoOrdered * taco;
+		taco = tacoOrdered * tacoPrice;
 		
 		System.out.println("How many orders of rice and beans would you like? >>");
 		riceAndBeansOrdered = input.nextDouble();
-		tacoPrice = riceAndBeansOrdered * taco;
+		riceAndBeans = riceAndBeansOrdered * riceAndBeansPrice;
 		
-		System.out.println("How many tacos would you like? >>");
-		tacoOrdered = input.nextDouble();
-		tacoPrice = tacoOrdered * taco;
+		System.out.println("How many taco salads would you like? >>");
+		TacoSaladOrdered = input.nextDouble();
+		TacoSalad = TacoSaladOrdered * TacoSaladPrice;
+		
+		System.out.println("How many orders of burritos would you like? >>");
+		burritosOrdered = input.nextDouble();
+		burritos = burritosOrdered * burritosPrice;
+		
+		System.out.println("How many orders of Mexican Pop would you like? >>");
+		MexicanPopOrdered = input.nextDouble();
+		MexicanPop = MexicanPopOrdered * MexicanPopPrice;
+		
+		System.out.println("How many orders of chips and salsa would you like? >>");
+		chipsAndSalsaOrdered = input.nextDouble();
+		chipsAndSalsa = chipsAndSalsaOrdered * chipsAndSalsaPrice;
+		
+		System.out.println("How many orders of  tamales would you like? >>");
+		 tamalesOrdered = input.nextDouble();
+		 tamales =  tamalesOrdered *  tamalesPrice;
+		
+		System.out.println("How many orders of  enchiladas would you like? >>");
+		 enchiladasOrdered = input.nextDouble();
+		 enchiladas =  enchiladasOrdered *  enchiladasPrice;
+		
+		System.out.println("How many orders of  fajitas would you like? >>");
+		 fajitasOrdered = input.nextDouble();
+		 fajita =  fajitasOrdered *  fajitasPrice;
+		
+		System.out.println("How many orders of horchata would you like? >>");
+		HorchataOrdered = input.nextDouble();
+		Horchata = HorchataOrdered * HorchataPrice;
+		
+		
+		total = taco + riceAndBeans + TacoSalad + Horchata + burritos + MexicanPop +  chipsAndSalsa + tamales + enchiladas + fajita;
+		
+		System.out.println("Your total is $" +total);
+		
+		
 	}
 
 }

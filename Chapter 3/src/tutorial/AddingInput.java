@@ -17,7 +17,7 @@ public class AddingInput {
 		
 		System.out.println("Enter your starting wage >>");
 		StartingWage  = input.nextDouble();
-		predictRaise(StartingWage)
+		predictRaise(StartingWage);
 		predictRaise(salary);
 		
 		
